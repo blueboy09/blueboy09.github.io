@@ -1,107 +1,123 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
+<html>
+  <head>
+<title>今天你是新闻主角</title>
 
-Name       : Black Eyed Susan 
-Description: A two-column, fixed-width design.
-Version    : 1.0
-Released   : 20081109
 
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Blueboy09 Blog</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
 </head>
-<body>
-<!-- start header -->
-<div id="header">
-  <h1><strong> Blueboy09  </strong> Homepage  </h1>
-	<p> from IIIS of Tsinghua univ.</p>
-</div>
-<!-- end header -->
-<!-- start page -->
-<div id="wrapper">
-<div id="page">
-	<!-- start content -->
-	<div id="content">
-		<div class="post">
-			<h1 class="title"></h1>
-			<p class="byline">Posted on June 15th, 2014 by <a href="#">admin</a> | <a href="#">Edit</a></p>
-			<div class="entry">
-			  <h2><strong> My work Interests </strong> </h2>
+<body background="images.jpg">
+<h1 align="center">今天你是新闻头条</h1>
+<center>
+<img src="xiaoyan.jpg" align="middle" width="200" height="200"/>
 
-              <ul>
-                <li>Algorithms (Approximation Algorithms, Graph Algorithms, Randomized Algorithms, Online Algorithms)</li>
-                <li>Algorithmic Game Theory</li>
-                <li>Combinatorial Optimization and Stochastic Optimization</li>
-                <li>Databases, Large-scale Data Management and Analytics</li>
-                <li>Statistical and Computational Learning Theory, Online Learning</li>
-                <li>Networks (Algorithmic/Theoretical Aspects of the Internet, Wireless, Social Networks)</li>
-              </ul>
+ 
+<h6>您要参加的活动:</h6>
+<form id="abc">
 
-			</div>
-			<p class="meta"><a href="#" class="more">Read More</a></p>
-		</div>
-		<div class="post">
-			<h2 class="title">Resent work</h2>
-			<p class="byline">Posted on June 15th, 2014 by <a href="#">admin</a> | <a href="#">Edit</a></p>
-			<div class="entry">
-				<p></p>
-			</div>
-			<p class="meta"><a href="#" class="more">Read More</a></p>
-		</div>
-	</div>
-	<!-- end content -->
-	<!-- start sidebar -->
-	<div id="sidebar">
-		<ul>
-			<li>
-				<ul>
-					<li><a href="https://github.com/blueboy09/RemMyLifeServer">Remember my life Sever</a></li>
-                                <li><a href="https://github.com/blueboy09/RemMyLifeMobile">Remember my life Mobile</a></li>
-					<li><a href="https://github.com/blueboy09/Rupers_Algorithm">Ruppert Algorithm</a></li>
-					<li><a href="https://github.com/blueboy09/GitHcss"> HCSS Jcuda </a></li>
-                                <li><a href="https://github.com/blueboy09/Google-IPs">Google-IPs</a></li>
+<select id="abc1",  name="">
+<option value="清乐华章" selected="selected"> 清乐华章</option>
+<option value="巅峰对话"> 巅峰对话 </option>
+<option value="西阶论坛"> 西阶论坛</option>
+<option value="学术人生"> 学术人生 </option>
+</select>
+</form>
 
-				</ul>
-			</li>
-			<li>
-				<h2>Useful Links & Resource</h2>
-				<ul>
-					<li><a href="http://www.nada.kth.se/~viggo/problemlist/compendium.html">A compendium of NP optimization problems</a></li>
-					<li><a href="http://iiis.tsinghua.edu.cn/~jianli/paper/cheat%20sheet.pdf">Theoretical Computer Science Cheat Sheet</a></li>
-					<li><a href="http://www.econphd.net/?f">A Collection of Lecture Notes</a></li>
-					<li><a href="http://academicearth.org/">Online Video Courses</a></li>
-					<li><a href="http://www.confsearch.org/confsearch/">Computer Science Conferences</a></li>
-				</ul>
-			</li>
-			<li>
-				<h2>Archives</h2>
-				<ul>
-					<li><a href="#">January</a> (23)</li>
-					<li><a href="#">December</a> (31)</li>
-					<li><a href="#">November</a> (31)</li>
-					<li><a href="#">October</a> (30)</li>
-					<li><a href="#">September</a> (31)</li>
-					<li><a href="#">August</a> (30)</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<!-- end sidebar -->
-</div>
-	<div style="clear:both">&nbsp;</div>
-</div>
-<!-- end page -->
-<div id="footer">
-	<p>&copy;&nbsp;2007 All Rights Reserved &nbsp;&bull;&nbsp; Design by &nbsp;&nbsp;<a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
-</div>
+<h6>你的大名: </h6>
+<form>
+
+<input id="who", type="text" name="firstname" value="王大锤" />
+</form>
+
+  <button  type="button" onclick="myFunction()">点击生成头条</button>
+</center>
+
 </body>
+
+<script>
+function myFunction()
+{
+
+
+x=document.getElementById("who");
+b=document.getElementById("abc1");
+
+var acd=b.value;
+
+document.write('<body background ="images.jpg">'); 
+switch (acd)
+{
+
+
+case "清乐华章":
+
+document.write('<h3 align="center">“清乐华章”第41场——' +x.value+ '“唱”谈歌王之路成功举办</h3>');
+
+document.write('<p>2月31日，刚刚获得《我是歌手》“歌王”称号的' + x.value + '来到清华，在新清华学堂成功举办“清乐华章”第41场演出——' +x.value +'“唱”谈歌王之路在随后的访谈中，'+x.value+'与清华学子分享了他的“艺术之路”。回想20年前，他由学术研究转向歌唱事业的抉择，' +x.value+'说道：“做了决定就要坚持！”在谈到2041年参加《我是歌手》的体会时，他说，每一场比拼对他而言都是演绎新的作品，全力以赴做到最好，是他对音乐的追求。</p>'); 
+
+break
+case "巅峰对话":
+document.write('<h3 align="center">诺贝尔奖获得者' +x.value + '做客清华“巅峰对话”</h3>');
+document.write('<p>2月31日下午，清华大学“巅峰对话”第41场在 X楼接待厅举行，2015年诺贝尔奖获得者' + x.value+'做客“巅峰对话”，与来自清华多个学院的百余名清华学子对话科学人生。</p>');
+document.write('<p>' + x.value + '简要介绍了自己的科研经历与科研成果，分享了学术感悟。' + x.value +'表示，从学生时代开始，他就对学术研究很着迷，并确定了研究兴趣。在研究过程中，他研读了相关科学家的工作成果，并参与多个实验室课题的研究，并在实验室中做了大量的实验。</p>')  
+document.write('<p>谈到自己的日常生活，'+ x.value +'幸福地表示，自己的家人非常支持和理解他的科研，科研对于自己来说是兴趣，是专业，是职业，需要耗费很大的经历去研究，但成家立业可以并存。</p>')
+break
+case "西阶论坛":
+document.write('<h3 align="center">著名校友'+x.value +'做客清华大学西阶论坛，畅谈职场成功之路</h3>');
+document.write('<p>2月31日下午，清华大学校友、摩根大拿亚洲区总裁'+x.value+ '重返母校做客西阶论坛第四十一场，和清华学子畅谈职场成功之路</p>');
+document.write('<p>' +x.value +'在快速取得职业生涯成功的问题上发表了自己的看法，并对清华学子提出了几条建议。'+ x.value+'认为当前的大学生大学里应该要掌握三项能力：学习能力、思辨能力和沟通能力。在人才的发展问题上，'+x.value+' 还认为“主动性”的学习和工作的能力会给个人的发展带来更好的发展。 </p>'); 
+
+break
+case "学术人生":
+document.write('<h3 align="center">'+ x.value +' 做客学术人生，谈求学治学</h3>');
+document.write('<p>2月31日晚，中国工科院院士' +x.value +'做客第41期“学术人生”活动，讲述求学经历、治学理念、育人精神与日常生活等精彩人生故事，分享自己在“学术人生”路上的思考。</p>');
+document.write('<p>谈到日常生活与子女教育，' +x.value +'表示自己对学术的热爱是他每天保持充沛精力的源动力，而合理安排和高效利用时间是在忙碌生活节奏中保持平衡的重要条件。而他对学生和子女一样的高要求正是出于对后辈青年的深切关爱。提问环节，'+x.value+'就同学们提出的“如何面对学术逆境”、“如何找到最为擅长的领域并坚持”等问题作了进一步交流。</p>');
+break
+}
+
+document.write('<p>本文纯属娱乐，如想生成自己的新闻链接请点击:</P>');
+document.write('<a href="http://xiaoyanzaixian.kuaizhan.com">清华大学小研在线</a>')
+document.write('<p>真实活动信息请关注微信号：xiaoyanthu，清华大学小研在线</P>');
+
+
+switch (acd)
+{
+
+case "清乐华章":
+
+document.write('<h4 >清乐华章</h4>');
+document.write('<p>“清乐华章”校园文艺演出系列活动是清华大学研究生院、清华大学党委研究生工作部在香港回归十周年、中国话剧百年纪念、清华大学96周年校庆之际推出的校园文化品牌活动，由清华大学研究生会组织。旨在通过邀请国内顶尖水准的演出团体，将民族文化、传统文化和流行文化进一步引入校园，提高清华同学的人文素养，全面推进校园精神文明建设，营造健康、文明、积极向上的校园文化氛围。现已成为清华大学演出规格最高、受众最广的非商业性文艺活动。</p>');
+
+
+break
+case "巅峰对话":
+document.write('<h4>巅峰对话</h4>');
+document.write('<p>清华大学“巅峰对话”(Tsinghua Top Talk）是由清华大学研究生会2013年发起并主办的多学科学术论坛。“巅峰对话”旨在通过邀请各学科国际学术大师（以诺贝尔奖、图灵奖、菲尔兹奖获得者为主），为清华学生与相关领域学术大师搭建同台对话的平台，鼓励清华学生质疑学术权威、挑战现有学术范式，培养批判性思维和创新能力，力求“对话激发创新”。</p>');
+
+break
+case "西阶论坛":
+document.write('<h4>西阶论坛</h4>');
+document.write('<p>清华大学“西阶论坛”是由清华大学校友总会与校党委研究生工作部共同主办、清华大学研究生会承办的高端论坛，于2010年校庆时由中国人民银行行长周小川与校党委书记胡和平共同揭幕。西阶论坛紧密围绕拔尖创新人才培养的中心工作，通过邀请行业领军人物与同学近距离接触交流，引导广大学子树立正确的人生观、价值观、世界观，对于青年学子全面成长成才起到重要的导向作用。</p>');
+
+break
+case "学术人生":
+document.write('<h4>学术人生</h4>');
+document.write('<p>“学术人生”讲坛由清华大学研究生会主办，邀请在清华学习或工作过的著名教授、国内外知名学者等泰斗级人物与清华学子面对面，通过深入挖掘的故事和精心设计的现场互动再现他们严谨的治学态度和不平凡的人生历程，以激发广大研究生的学术志趣。</p>');
+
+break
+}
+
+document.write('<input type=button value=再玩一次 onclick="history.go(0)">');
+
+document.write('</body>'); 
+
+
+
+}
+</script>
+
+
+
+
+
+
 </html>
-<span style="display:none;"><a href="http://www.mobanwang.com" title="��ҳģ������">��ҳģ��</a></span>
